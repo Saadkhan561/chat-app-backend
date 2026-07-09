@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    /* =========================
+       FILE STRUCTURE
+    ========================= */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* =========================
+       MODULE SYSTEM (FIXED)
+    ========================= */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    /* =========================
+       TARGET
+    ========================= */
+    "target": "ES2020",
+
+    /* =========================
+       NODE TYPES (IMPORTANT)
+    ========================= */
+    "types": ["node"],
+
+    /* =========================
+       OUTPUT OPTIONS
+    ========================= */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* =========================
+       STRICTNESS (KEEP GOOD SAFETY)
+    ========================= */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* =========================
+       MODULE SAFETY (IMPORTANT FIX)
+    ========================= */
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+
+    /* =========================
+       PERFORMANCE
+    ========================= */
+    "skipLibCheck": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
