@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsc && concurrently \"tsc --watch\" \"nodemon --legacy-watch dist/index.js\"",
     "build": "tsc",
-    "start": "nodemon --legacy-watch dist/index.js",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "typeorm": "typeorm-ts-node-esm -d src/config/data-source.ts",
     "migration:generate": "npm run typeorm migration:generate src/migrations/Init",

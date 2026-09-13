@@ -28,11 +28,7 @@ const __dirname = path.dirname(__filename);
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: requireEnv("DB_HOST"),
-  port: Number(requireEnv("DB_PORT")),
-  username: requireEnv("DB_USER"),
-  password: requireEnv("DB_PASS"),
-  database: requireEnv("DB_NAME"),
+  url: requireEnv("DATABASE_URL"),
 
   entities: [
     UserEntity,
@@ -51,5 +47,5 @@ export const AppDataSource = new DataSource({
   migrations: [path.join(__dirname, "../migrations/*.{js,ts}")],
 
   synchronize: true,
-  logging: false,
+  logging: true,
 });
